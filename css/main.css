@@ -1103,6 +1103,7 @@ pre .javascript .function {
   margin: 0;
   text-align: center;
   background: url("/images/111.jpg");
+  background-size: cover;
   position: relative;
   height: 180px;
 }
@@ -1132,8 +1133,9 @@ pre .javascript .function {
   display: inline-block;
   vertical-align: top;
   line-height: 36px;
-  font-size: 150%;
-  font-weight: normal;
+  color: #e0e0c0;
+  font-size: 180%;
+  font-weight: 600;
   font-family: 'Lato', "PingFang SC", "Microsoft YaHei", sans-serif;
   margin-top: 125px;
 }
@@ -1888,7 +1890,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #b411ff;
+  background: #78ffcf;
 }
 .links-of-blogroll {
   font-size: 13px;
