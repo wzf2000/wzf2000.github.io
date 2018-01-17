@@ -1994,7 +1994,7 @@ img:hover {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #ffa640;
+  background: #ff9117;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -3320,4 +3320,37 @@ body {
 }
 .site-title {
   font-family: "Arvo-BoldItalic", sans-serif;
+}
+.menu .menu-item a {
+  color: #cf4f0f;
+}
+.site-author-name {
+  color: #3f5fff;
+}
+.site-description {
+  color: #0f0f4f;
+}
+.site-state-item-count {
+  color: #800080;
+}
+.site-state-item-name {
+  color: #aa3;
+}
+.links-of-blogroll-item a {
+  color: #f00;
+}
+.header {
+  border-radius: 15px 5px 25px 0px;
+  position: relative;
+}
+.sidebar {
+  border-radius: 15px 5px 25px 0px;
+  width: auto;
+  position: relative;
+}
+.header-inner {
+  border-radius: 15px 5px 25px 0px;
+}
+.sidebar-inner {
+  border-radius: 15px 5px 25px 0px;
 }
