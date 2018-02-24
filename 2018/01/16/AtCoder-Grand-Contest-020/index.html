@@ -141,18 +141,18 @@
 
 
 
-<meta name="description" content="AtCoder Grand Contest 020">
+<meta name="description" content="AtCoder Grand Contest 020rating好亏啊。。。">
 <meta name="keywords" content="赛后题解">
 <meta property="og:type" content="article">
 <meta property="og:title" content="AtCoder Grand Contest 020">
 <meta property="og:url" content="https://wzf2000.github.io/2018/01/16/AtCoder-Grand-Contest-020/index.html">
 <meta property="og:site_name" content="wzf2000&#39;s blog">
-<meta property="og:description" content="AtCoder Grand Contest 020">
+<meta property="og:description" content="AtCoder Grand Contest 020rating好亏啊。。。">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-01-17T03:23:30.000Z">
+<meta property="og:updated_time" content="2018-02-24T10:54:43.965Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="AtCoder Grand Contest 020">
-<meta name="twitter:description" content="AtCoder Grand Contest 020">
+<meta name="twitter:description" content="AtCoder Grand Contest 020rating好亏啊。。。">
 
 
 
@@ -486,7 +486,7 @@
                   <span class="post-meta-item-text">字数统计&#58;</span>
                 
                 <span title="字数统计">
-                  1,488
+                  1,492
                 </span>
               
 
@@ -523,7 +523,8 @@
       
 
       
-        <script src="/assets/js/APlayer.min.js"> </script><h1 id="AtCoder-Grand-Contest-020"><a href="#AtCoder-Grand-Contest-020" class="headerlink" title="AtCoder Grand Contest 020"></a>AtCoder Grand Contest 020</h1><a id="more"></a>
+        <script src="\assets\js\APlayer.min.js"> </script><h1 id="AtCoder-Grand-Contest-020"><a href="#AtCoder-Grand-Contest-020" class="headerlink" title="AtCoder Grand Contest 020"></a>AtCoder Grand Contest 020</h1><p>rating好亏啊。。。</p>
+<a id="more"></a>
 <h2 id="Move-and-Win"><a href="#Move-and-Win" class="headerlink" title="Move and Win"></a>Move and Win</h2><h3 id="代码："><a href="#代码：" class="headerlink" title="代码："></a>代码：</h3><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;bits/stdc++.h&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span>;</span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">	<span class="keyword">int</span> n,a,b;</span><br><span class="line">	<span class="built_in">cin</span>&gt;&gt;n&gt;&gt;a&gt;&gt;b;</span><br><span class="line">	<span class="keyword">if</span> (<span class="built_in">abs</span>(a-b)&amp;<span class="number">1</span>) <span class="built_in">puts</span>(<span class="string">"Borys"</span>);</span><br><span class="line">	<span class="keyword">else</span> <span class="built_in">puts</span>(<span class="string">"Alice"</span>);</span><br><span class="line">	<span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 <h2 id="Ice-Rink-Game"><a href="#Ice-Rink-Game" class="headerlink" title="Ice Rink Game"></a>Ice Rink Game</h2><h3 id="代码：-1"><a href="#代码：-1" class="headerlink" title="代码："></a>代码：</h3><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;bits/stdc++.h&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">define</span> ll long long</span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">define</span> N 100009</span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span>;</span><br><span class="line"><span class="keyword">int</span> n,a[N];</span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">	<span class="built_in">cin</span>&gt;&gt;n;</span><br><span class="line">	<span class="keyword">for</span> (<span class="keyword">int</span> i=<span class="number">1</span>;i&lt;=n;i++) <span class="built_in">cin</span>&gt;&gt;a[i];</span><br><span class="line">	ll Min=<span class="number">2</span>,Max=<span class="number">2</span>;</span><br><span class="line">	<span class="keyword">for</span> (<span class="keyword">int</span> i=n;i;i--)</span><br><span class="line">	&#123;</span><br><span class="line">		ll x=Min/a[i]*a[i];</span><br><span class="line">		<span class="keyword">if</span> (x&lt;Min) x+=a[i];</span><br><span class="line">		ll y=Max/a[i]*a[i]+(a[i]<span class="number">-1</span>);</span><br><span class="line">		Min=x,Max=max(Max,y);</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="keyword">if</span> (Min&gt;Max) <span class="built_in">puts</span>(<span class="string">"-1"</span>);</span><br><span class="line">	<span class="keyword">else</span> <span class="built_in">printf</span>(<span class="string">"%lld %lld\n"</span>,Min,Max);</span><br><span class="line">	<span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 <h2 id="Median-Sum"><a href="#Median-Sum" class="headerlink" title="Median Sum"></a>Median Sum</h2><h3 id="题解："><a href="#题解：" class="headerlink" title="题解："></a>题解：</h3><ul>
@@ -591,7 +592,7 @@
   <p><span>本文标题:</span><a href="/2018/01/16/AtCoder-Grand-Contest-020/">AtCoder Grand Contest 020</a></p>
   <p><span>文章作者:</span><a href="/" title="访问 wzf2000 的个人博客">wzf2000</a></p>
   <p><span>发布时间:</span>2018年01月16日 - 15:01</p>
-  <p><span>最后更新:</span>2018年01月17日 - 11:01</p>
+  <p><span>最后更新:</span>2018年02月24日 - 18:02</p>
   <p><span>原始链接:</span><a href="/2018/01/16/AtCoder-Grand-Contest-020/" title="AtCoder Grand Contest 020">https://wzf2000.github.io/2018/01/16/AtCoder-Grand-Contest-020/</a>
     <span class="copy-path"  title="点击复制文章链接"><i class="fa fa-clipboard" data-clipboard-text="https://wzf2000.github.io/2018/01/16/AtCoder-Grand-Contest-020/"  aria-label="复制成功！"></i></span>
   </p>
