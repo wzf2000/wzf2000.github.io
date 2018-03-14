@@ -141,18 +141,18 @@
 
 
 
-<meta name="description" content="Uoj198题解题意： 有一颗$n$个节点的树($0$~$n-1$标号)，根节点为$0$，每个节点由其父节点变化得到。变化方法如下： 第一种：增加了一个坐标为$(x_i,y_i,z_i)$，花费为$c_i$的点。 第二种：删除其中本来存在的某个点。   $m$次询问在$s$号点的所有点中，确定$x$坐标为$x_0$，$y,z$坐标可以选定的情况下，到其中某一个点最小的花费。花费定义为$cost=c">
+<meta name="description" content="Uoj#198.【CTSC2016】时空旅行 题解题意： 有一颗$n$个节点的树($0$~$n-1$标号)，根节点为$0$，每个节点由其父节点变化得到。变化方法如下： 第一种：增加了一个坐标为$(x_i,y_i,z_i)$，花费为$c_i$的点。 第二种：删除其中本来存在的某个点。   $m$次询问在$s$号点的所有点中，确定$x$坐标为$x_0$，$y,z$坐标可以选定的情况下，到其中某一个点最">
 <meta name="keywords" content="线段树,动态凸包">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Uoj198">
+<meta property="og:title" content="Uoj#198.【CTSC2016】时空旅行">
 <meta property="og:url" content="https://wzf2000.github.io/2018/01/02/Uoj198/index.html">
 <meta property="og:site_name" content="wzf2000&#39;s blog">
-<meta property="og:description" content="Uoj198题解题意： 有一颗$n$个节点的树($0$~$n-1$标号)，根节点为$0$，每个节点由其父节点变化得到。变化方法如下： 第一种：增加了一个坐标为$(x_i,y_i,z_i)$，花费为$c_i$的点。 第二种：删除其中本来存在的某个点。   $m$次询问在$s$号点的所有点中，确定$x$坐标为$x_0$，$y,z$坐标可以选定的情况下，到其中某一个点最小的花费。花费定义为$cost=c">
+<meta property="og:description" content="Uoj#198.【CTSC2016】时空旅行 题解题意： 有一颗$n$个节点的树($0$~$n-1$标号)，根节点为$0$，每个节点由其父节点变化得到。变化方法如下： 第一种：增加了一个坐标为$(x_i,y_i,z_i)$，花费为$c_i$的点。 第二种：删除其中本来存在的某个点。   $m$次询问在$s$号点的所有点中，确定$x$坐标为$x_0$，$y,z$坐标可以选定的情况下，到其中某一个点最">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-01-02T07:32:08.000Z">
+<meta property="og:updated_time" content="2018-03-14T07:10:17.035Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Uoj198">
-<meta name="twitter:description" content="Uoj198题解题意： 有一颗$n$个节点的树($0$~$n-1$标号)，根节点为$0$，每个节点由其父节点变化得到。变化方法如下： 第一种：增加了一个坐标为$(x_i,y_i,z_i)$，花费为$c_i$的点。 第二种：删除其中本来存在的某个点。   $m$次询问在$s$号点的所有点中，确定$x$坐标为$x_0$，$y,z$坐标可以选定的情况下，到其中某一个点最小的花费。花费定义为$cost=c">
+<meta name="twitter:title" content="Uoj#198.【CTSC2016】时空旅行">
+<meta name="twitter:description" content="Uoj#198.【CTSC2016】时空旅行 题解题意： 有一颗$n$个节点的树($0$~$n-1$标号)，根节点为$0$，每个节点由其父节点变化得到。变化方法如下： 第一种：增加了一个坐标为$(x_i,y_i,z_i)$，花费为$c_i$的点。 第二种：删除其中本来存在的某个点。   $m$次询问在$s$号点的所有点中，确定$x$坐标为$x_0$，$y,z$坐标可以选定的情况下，到其中某一个点最">
 
 
 
@@ -188,7 +188,7 @@
 
 
 
-  <title>Uoj198 | wzf2000's blog</title>
+  <title>Uoj#198.【CTSC2016】时空旅行 | wzf2000's blog</title>
   
 
 
@@ -409,7 +409,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">Uoj198</h1>
+          <h1 class="post-title" itemprop="name headline">Uoj#198.【CTSC2016】时空旅行</h1>
         
 
         <div class="post-meta">
@@ -508,7 +508,7 @@
                   <span class="post-meta-item-text">字数统计&#58;</span>
                 
                 <span title="字数统计">
-                  1,485
+                  1,491
                 </span>
               
 
@@ -545,7 +545,7 @@
       
 
       
-        <script src="\assets\js\APlayer.min.js"> </script><h1 id="Uoj198题解"><a href="#Uoj198题解" class="headerlink" title="Uoj198题解"></a>Uoj198题解</h1><h3 id="题意："><a href="#题意：" class="headerlink" title="题意："></a>题意：</h3><ul>
+        <script src="\assets\js\APlayer.min.js"> </script><h1 id="Uoj-198-【CTSC2016】时空旅行-题解"><a href="#Uoj-198-【CTSC2016】时空旅行-题解" class="headerlink" title="Uoj#198.【CTSC2016】时空旅行 题解"></a>Uoj#198.【CTSC2016】时空旅行 题解</h1><h3 id="题意："><a href="#题意：" class="headerlink" title="题意："></a>题意：</h3><ul>
 <li>有一颗$n$个节点的树($0$~$n-1$标号)，根节点为$0$，每个节点由其父节点变化得到。变化方法如下：<ul>
 <li>第一种：增加了一个坐标为$(x_i,y_i,z_i)$，花费为$c_i$的点。</li>
 <li>第二种：删除其中本来存在的某个点。</li>
@@ -596,11 +596,11 @@
   <!-- JS库 sweetalert 可修改路径 -->
   <script src="https://cdn.bootcss.com/jquery/2.0.0/jquery.min.js"></script>
   <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
-  <p><span>本文标题:</span><a href="/2018/01/02/Uoj198/">Uoj198</a></p>
+  <p><span>本文标题:</span><a href="/2018/01/02/Uoj198/">Uoj#198.【CTSC2016】时空旅行</a></p>
   <p><span>文章作者:</span><a href="/" title="访问 wzf2000 的个人博客">wzf2000</a></p>
   <p><span>发布时间:</span>2018年01月02日 - 15:01</p>
-  <p><span>最后更新:</span>2018年01月02日 - 15:01</p>
-  <p><span>原始链接:</span><a href="/2018/01/02/Uoj198/" title="Uoj198">https://wzf2000.github.io/2018/01/02/Uoj198/</a>
+  <p><span>最后更新:</span>2018年03月14日 - 15:03</p>
+  <p><span>原始链接:</span><a href="/2018/01/02/Uoj198/" title="Uoj#198.【CTSC2016】时空旅行">https://wzf2000.github.io/2018/01/02/Uoj198/</a>
     <span class="copy-path"  title="点击复制文章链接"><i class="fa fa-clipboard" data-clipboard-text="https://wzf2000.github.io/2018/01/02/Uoj198/"  aria-label="复制成功！"></i></span>
   </p>
   <p><span>许可协议:</span><i class="fa fa-creative-commons"></i> <a rel="license" href="https://creativecommons.org/licenses/by-nc-nd/4.0/" target="_blank" title="Attribution-NonCommercial-NoDerivatives 4.0 International (CC BY-NC-ND 4.0)">署名-非商业性使用-禁止演绎 4.0 国际</a> 转载请保留原文链接及作者。</p>  
@@ -657,8 +657,8 @@
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/2018/01/16/Uoj213/" rel="prev" title="Uoj213">
-                Uoj213 <i class="fa fa-chevron-right"></i>
+              <a href="/2018/01/16/Uoj213/" rel="prev" title="Uoj#213.【UNR">
+                Uoj#213.【UNR <i class="fa fa-chevron-right"></i>
               </a>
             
           </div>
@@ -750,7 +750,7 @@
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">38</span>
+                  <span class="site-state-item-count">49</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
@@ -761,7 +761,7 @@
               
               <div class="site-state-item site-state-categories">
                 <a href="/categories/index.html">
-                  <span class="site-state-item-count">32</span>
+                  <span class="site-state-item-count">42</span>
                   <span class="site-state-item-name">分类</span>
                 </a>
               </div>
@@ -772,7 +772,7 @@
               
               <div class="site-state-item site-state-tags">
                 <a href="/tags/index.html">
-                  <span class="site-state-item-count">31</span>
+                  <span class="site-state-item-count">42</span>
                   <span class="site-state-item-name">标签</span>
                 </a>
               </div>
@@ -872,7 +872,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#Uoj198题解"><span class="nav-number">1.</span> <span class="nav-text">Uoj198题解</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#题意："><span class="nav-number">1.0.1.</span> <span class="nav-text">题意：</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#题解："><span class="nav-number">1.0.2.</span> <span class="nav-text">题解：</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#代码："><span class="nav-number">1.0.3.</span> <span class="nav-text">代码：</span></a></li></ol></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#Uoj-198-【CTSC2016】时空旅行-题解"><span class="nav-number">1.</span> <span class="nav-text">Uoj#198.【CTSC2016】时空旅行 题解</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#题意："><span class="nav-number">1.0.1.</span> <span class="nav-text">题意：</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#题解："><span class="nav-number">1.0.2.</span> <span class="nav-text">题解：</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#代码："><span class="nav-number">1.0.3.</span> <span class="nav-text">代码：</span></a></li></ol></li></ol></li></ol></div>
             
 
           </div>
@@ -907,7 +907,7 @@
     
       <span class="post-meta-item-text">Site words total count&#58;</span>
     
-    <span title="Site words total count">32.6k</span>
+    <span title="Site words total count">47.3k</span>
   
 </div>
 
@@ -935,7 +935,7 @@
 
 <div class="theme-info">
   <div class="powered-by"></div>
-  <span class="post-count">博客全站共32.6k字</span>
+  <span class="post-count">博客全站共47.3k字</span>
 </div>
         
 
@@ -1073,7 +1073,7 @@
         var disqus_config = function () {
           this.page.url = 'https://wzf2000.github.io/2018/01/02/Uoj198/';
           this.page.identifier = '2018/01/02/Uoj198/';
-          this.page.title = 'Uoj198';
+          this.page.title = 'Uoj#198.【CTSC2016】时空旅行';
         };
         var d = document, s = d.createElement('script');
         s.src = 'https://https-wzf2000-github-io.disqus.com/embed.js';
@@ -1454,26 +1454,6 @@
   
 
   
-  
-    <script type="text/x-mathjax-config">
-      MathJax.Hub.Config({
-        tex2jax: {
-          inlineMath: [ ['$','$'], ["\\(","\\)"]  ],
-          processEscapes: true,
-          skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
-        }
-      });
-    </script>
-
-    <script type="text/x-mathjax-config">
-      MathJax.Hub.Queue(function() {
-        var all = MathJax.Hub.getAllJax(), i;
-        for (i=0; i < all.length; i += 1) {
-          all[i].SourceElement().parentNode.className += ' has-jax';
-        }
-      });
-    </script>
-    <script type="text/javascript" src="//cdn.bootcss.com/mathjax/2.7.1/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
   
 
 

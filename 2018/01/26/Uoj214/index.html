@@ -141,18 +141,18 @@
 
 
 
-<meta name="description" content="Uoj214题解题意： 有$n$个小朋友要教唱歌，每个小朋友可能会学某一些音，每一秒发生的所有事件都是等概率的（包括已经发生的），事件即某个小朋友学（会）了某个音。问连续的一段长度为$m$的区间的小朋友会唱一段歌的期望事件。 $1\le m\le n\le 30$">
+<meta name="description" content="Uoj#214.【UNR #1】合唱队形 题解题意： 有$n$个小朋友要教唱歌，每个小朋友可能会学某一些音，每一秒发生的所有事件都是等概率的（包括已经发生的），事件即某个小朋友学（会）了某个音。问连续的一段长度为$m$的区间的小朋友会唱一段歌的期望事件。 $1\le m\le n\le 30$">
 <meta name="keywords" content="dp,uoj">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Uoj214">
+<meta property="og:title" content="Uoj#214.【UNR">
 <meta property="og:url" content="https://wzf2000.github.io/2018/01/26/Uoj214/index.html">
 <meta property="og:site_name" content="wzf2000&#39;s blog">
-<meta property="og:description" content="Uoj214题解题意： 有$n$个小朋友要教唱歌，每个小朋友可能会学某一些音，每一秒发生的所有事件都是等概率的（包括已经发生的），事件即某个小朋友学（会）了某个音。问连续的一段长度为$m$的区间的小朋友会唱一段歌的期望事件。 $1\le m\le n\le 30$">
+<meta property="og:description" content="Uoj#214.【UNR #1】合唱队形 题解题意： 有$n$个小朋友要教唱歌，每个小朋友可能会学某一些音，每一秒发生的所有事件都是等概率的（包括已经发生的），事件即某个小朋友学（会）了某个音。问连续的一段长度为$m$的区间的小朋友会唱一段歌的期望事件。 $1\le m\le n\le 30$">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-01-26T08:44:29.363Z">
+<meta property="og:updated_time" content="2018-03-14T07:11:20.423Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Uoj214">
-<meta name="twitter:description" content="Uoj214题解题意： 有$n$个小朋友要教唱歌，每个小朋友可能会学某一些音，每一秒发生的所有事件都是等概率的（包括已经发生的），事件即某个小朋友学（会）了某个音。问连续的一段长度为$m$的区间的小朋友会唱一段歌的期望事件。 $1\le m\le n\le 30$">
+<meta name="twitter:title" content="Uoj#214.【UNR">
+<meta name="twitter:description" content="Uoj#214.【UNR #1】合唱队形 题解题意： 有$n$个小朋友要教唱歌，每个小朋友可能会学某一些音，每一秒发生的所有事件都是等概率的（包括已经发生的），事件即某个小朋友学（会）了某个音。问连续的一段长度为$m$的区间的小朋友会唱一段歌的期望事件。 $1\le m\le n\le 30$">
 
 
 
@@ -188,7 +188,7 @@
 
 
 
-  <title>Uoj214 | wzf2000's blog</title>
+  <title>Uoj#214.【UNR | wzf2000's blog</title>
   
 
 
@@ -409,7 +409,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">Uoj214</h1>
+          <h1 class="post-title" itemprop="name headline">Uoj#214.【UNR</h1>
         
 
         <div class="post-meta">
@@ -508,7 +508,7 @@
                   <span class="post-meta-item-text">字数统计&#58;</span>
                 
                 <span title="字数统计">
-                  1,115
+                  1,122
                 </span>
               
 
@@ -545,7 +545,7 @@
       
 
       
-        <script src="\assets\js\APlayer.min.js"> </script><h1 id="Uoj214题解"><a href="#Uoj214题解" class="headerlink" title="Uoj214题解"></a>Uoj214题解</h1><h3 id="题意："><a href="#题意：" class="headerlink" title="题意："></a>题意：</h3><ul>
+        <script src="\assets\js\APlayer.min.js"> </script><h1 id="Uoj-214-【UNR-1】合唱队形-题解"><a href="#Uoj-214-【UNR-1】合唱队形-题解" class="headerlink" title="Uoj#214.【UNR #1】合唱队形 题解"></a>Uoj#214.【UNR #1】合唱队形 题解</h1><h3 id="题意："><a href="#题意：" class="headerlink" title="题意："></a>题意：</h3><ul>
 <li>有$n$个小朋友要教唱歌，每个小朋友可能会学某一些音，每一秒发生的所有事件都是等概率的（包括已经发生的），事件即某个小朋友学（会）了某个音。问连续的一段长度为$m$的区间的小朋友会唱一段歌的期望事件。</li>
 <li>$1\le m\le n\le 30$</li>
 </ul>
@@ -556,7 +556,7 @@
 <li><script type="math/tex; mode=display">F(k)=\sum_{i=1}^{k}\frac{sum}{k−i+1}</script></li>
 <li>长度为$m$的区间有$n−m+1$个，考虑枚举这些区间的完成情况，通过容斥计算贡献。</li>
 <li>设$f_t$表示事件$t$之前任务没有完成的概率。</li>
-<li>设$p_{S,t}$表示事件$t$之前区间集合$S$未被完成的概率。</li>
+<li>设$p_{S,t}$ 表示事件$t$之前区间集合$S$未被完成的概率。</li>
 <li>则可以知道：</li>
 <li><script type="math/tex; mode=display">Ans=\sum_{t=1}^{\infty}f_t\\=\sum_{t=1}^{\infty}\sum_{S}(−1)^{|S|}(1−p_{S,t})\\=\sum_{t=1}^{\infty}\sum_{S}(−1)^{|S|}−\sum_{t=1}^{\infty}\sum_{S}(−1)^{|S|}p_{S,t}\\=−\sum_{S}\sum_{t=1}^{\infty}(−1)^{|S|}p_{S,t}\\=−\sum_{S}(−1)^{|S|}E_S\\=−\sum_{S}(−1)^{|S|}F_S(k)</script></li>
 <li>这个我们考虑复杂度，发现他是一个$O(2^{n−m+1}n^2)$的复杂度，似乎并不能怎么样。</li>
@@ -570,8 +570,8 @@
 <li><script type="math/tex; mode=display">dp[i][next][k+num[next]]−=dp[i−1][now][k](next=(now×2+1) and U)</script></li>
 </ul>
 </li>
-<li>这样的复杂度是$O(2^mn^3)$的。</li>
-<li>平衡两边复杂度后至少可以得到一个$O(2^{\frac{n}{2}}n^3)$的做法，然后似乎就可以过了。</li>
+<li>这样的复杂度是 $O(2^mn^3)$ 的。</li>
+<li>平衡两边复杂度后至少可以得到一个 $O(2^{\frac{n}{2}}n^3)$ 的做法，然后似乎就可以过了。</li>
 </ul>
 <h3 id="代码："><a href="#代码：" class="headerlink" title="代码："></a>代码：</h3><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br><span class="line">97</span><br><span class="line">98</span><br><span class="line">99</span><br><span class="line">100</span><br><span class="line">101</span><br><span class="line">102</span><br><span class="line">103</span><br><span class="line">104</span><br><span class="line">105</span><br><span class="line">106</span><br><span class="line">107</span><br><span class="line">108</span><br><span class="line">109</span><br><span class="line">110</span><br><span class="line">111</span><br><span class="line">112</span><br><span class="line">113</span><br><span class="line">114</span><br><span class="line">115</span><br><span class="line">116</span><br><span class="line">117</span><br><span class="line">118</span><br><span class="line">119</span><br><span class="line">120</span><br><span class="line">121</span><br><span class="line">122</span><br><span class="line">123</span><br><span class="line">124</span><br><span class="line">125</span><br><span class="line">126</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;bits/stdc++.h&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">define</span> ll long long</span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">define</span> mod 998244353</span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">define</span> N 32</span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span>;</span><br><span class="line"><span class="keyword">int</span> n,m,len[N],c[N],q[N],cnt,Ans,F[N*N],sum_len,inv[N*N],study[N][N],dp[<span class="number">2</span>][<span class="number">1</span>&lt;&lt;<span class="number">13</span>][N*N];</span><br><span class="line"><span class="keyword">int</span> number[<span class="number">1</span>&lt;&lt;<span class="number">13</span>];</span><br><span class="line"><span class="keyword">bool</span> vis[N][N],ok[N],used[N];</span><br><span class="line"><span class="keyword">char</span> a[N][N],b[N];</span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">add</span><span class="params">(<span class="keyword">int</span> &amp;x,<span class="keyword">int</span> y)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">	x=(x+y&gt;=mod)?(x+y-mod):(x+y);</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">	inv[<span class="number">1</span>]=<span class="number">1</span>;</span><br><span class="line">	<span class="keyword">for</span> (<span class="keyword">int</span> i=<span class="number">2</span>;i&lt;N*N;i++)</span><br><span class="line">		inv[i]=(ll)inv[mod%i]*(mod-mod/i)%mod;</span><br><span class="line">	<span class="keyword">for</span> (<span class="keyword">int</span> i=<span class="number">1</span>;i&lt;N*N;i++)</span><br><span class="line">	&#123;</span><br><span class="line">		F[i]=<span class="number">0</span>;</span><br><span class="line">		<span class="keyword">for</span> (<span class="keyword">int</span> j=<span class="number">0</span>;j&lt;i;j++)</span><br><span class="line">			F[i]=(F[i]+inv[i-j])%mod;</span><br><span class="line">	&#125;</span><br><span class="line">	ios::sync_with_stdio(<span class="literal">false</span>),<span class="built_in">cin</span>.tie(<span class="number">0</span>),<span class="built_in">cout</span>.tie(<span class="number">0</span>);</span><br><span class="line">	<span class="keyword">int</span> T;</span><br><span class="line">	<span class="built_in">cin</span>&gt;&gt;T;</span><br><span class="line">	<span class="keyword">while</span> (T--)</span><br><span class="line">	&#123;</span><br><span class="line">		sum_len=Ans=<span class="number">0</span>;</span><br><span class="line">		<span class="built_in">cin</span>&gt;&gt;n&gt;&gt;m;</span><br><span class="line">		<span class="keyword">for</span> (<span class="keyword">int</span> i=<span class="number">1</span>;i&lt;=n;i++) <span class="built_in">cin</span>&gt;&gt;a[i];</span><br><span class="line">		<span class="built_in">cin</span>&gt;&gt;b;</span><br><span class="line">		<span class="built_in">memset</span>(vis,<span class="number">0</span>,<span class="keyword">sizeof</span>(vis));</span><br><span class="line">		<span class="keyword">for</span> (<span class="keyword">int</span> i=<span class="number">1</span>;i&lt;=n;i++)</span><br><span class="line">		&#123;</span><br><span class="line">			len[i]=<span class="built_in">strlen</span>(a[i]);</span><br><span class="line">			<span class="keyword">for</span> (<span class="keyword">int</span> j=<span class="number">0</span>;j&lt;len[i];j++)</span><br><span class="line">				vis[i][a[i][j]-<span class="string">'a'</span>]=<span class="number">1</span>;</span><br><span class="line">			sum_len+=len[i];</span><br><span class="line">		&#125;</span><br><span class="line">		<span class="keyword">for</span> (<span class="keyword">int</span> i=<span class="number">0</span>;i&lt;m;i++) c[i]=b[i]-<span class="string">'a'</span>;</span><br><span class="line">		cnt=<span class="number">0</span>;</span><br><span class="line">		<span class="built_in">memset</span>(ok,<span class="number">0</span>,<span class="keyword">sizeof</span>(ok));</span><br><span class="line">		<span class="keyword">for</span> (<span class="keyword">int</span> i=<span class="number">1</span>;i&lt;=n-m+<span class="number">1</span>;i++)</span><br><span class="line">		&#123;</span><br><span class="line">			ok[i]=<span class="number">1</span>;</span><br><span class="line">			<span class="keyword">for</span> (<span class="keyword">int</span> j=<span class="number">0</span>;j&lt;m;j++)</span><br><span class="line">				<span class="keyword">if</span> (!vis[i+j][c[j]])</span><br><span class="line">				&#123;</span><br><span class="line">					ok[i]=<span class="number">0</span>;</span><br><span class="line">					<span class="keyword">break</span>;</span><br><span class="line">				&#125;</span><br><span class="line">			<span class="keyword">if</span> (!ok[i]) <span class="keyword">continue</span>;</span><br><span class="line">			q[++cnt]=i;</span><br><span class="line">		&#125;</span><br><span class="line">		<span class="keyword">if</span> (cnt==<span class="number">0</span>)</span><br><span class="line">		&#123;</span><br><span class="line">			<span class="built_in">cout</span>&lt;&lt;<span class="string">"-1\n"</span>;</span><br><span class="line">			<span class="keyword">continue</span>;</span><br><span class="line">		&#125;</span><br><span class="line">		<span class="keyword">if</span> (n-m&lt;=<span class="number">17</span>)</span><br><span class="line">		&#123;</span><br><span class="line">			<span class="keyword">for</span> (<span class="keyword">int</span> i=<span class="number">0</span>;i&lt;(<span class="number">1</span>&lt;&lt;cnt);i++)</span><br><span class="line">			&#123;</span><br><span class="line">				<span class="keyword">int</span> size=<span class="number">0</span>,num=<span class="number">0</span>;</span><br><span class="line">				<span class="built_in">memset</span>(study,<span class="number">0</span>,<span class="keyword">sizeof</span>(study));</span><br><span class="line">				<span class="keyword">for</span> (<span class="keyword">int</span> j=<span class="number">1</span>;j&lt;=cnt;j++)</span><br><span class="line">					<span class="keyword">if</span> ((i&gt;&gt;(j<span class="number">-1</span>))&amp;<span class="number">1</span>)</span><br><span class="line">					&#123;</span><br><span class="line">						<span class="keyword">for</span> (<span class="keyword">int</span> k=q[j];k&lt;q[j]+m;k++)</span><br><span class="line">						&#123;</span><br><span class="line">							<span class="keyword">if</span> (!study[k][c[k-q[j]]])</span><br><span class="line">							&#123;</span><br><span class="line">								study[k][c[k-q[j]]]=<span class="number">1</span>;</span><br><span class="line">								num++;</span><br><span class="line">							&#125;</span><br><span class="line">						&#125;</span><br><span class="line">						size++;</span><br><span class="line">					&#125;</span><br><span class="line">				<span class="keyword">if</span> (size&amp;<span class="number">1</span>) Ans=(Ans+(ll)F[num]*sum_len%mod)%mod;</span><br><span class="line">				<span class="keyword">else</span> Ans=(Ans+mod-(ll)F[num]*sum_len%mod)%mod;</span><br><span class="line">			&#125;</span><br><span class="line">			<span class="built_in">cout</span>&lt;&lt;Ans&lt;&lt;<span class="string">"\n"</span>;</span><br><span class="line">		&#125;</span><br><span class="line">		<span class="keyword">else</span></span><br><span class="line">		&#123;</span><br><span class="line">			<span class="built_in">memset</span>(number,<span class="number">0</span>,<span class="keyword">sizeof</span>(number));</span><br><span class="line">			<span class="keyword">for</span> (<span class="keyword">int</span> i=<span class="number">0</span>;i&lt;(<span class="number">1</span>&lt;&lt;m);i++)</span><br><span class="line">			&#123;</span><br><span class="line">				<span class="built_in">memset</span>(used,<span class="number">0</span>,<span class="keyword">sizeof</span>(used));</span><br><span class="line">				<span class="keyword">for</span> (<span class="keyword">int</span> j=<span class="number">0</span>;j&lt;m;j++)</span><br><span class="line">					<span class="keyword">if</span> (i&gt;&gt;j&amp;<span class="number">1</span>)</span><br><span class="line">						<span class="keyword">if</span> (!used[c[j]]) used[c[j]]=<span class="number">1</span>,number[i]++;</span><br><span class="line">			&#125;</span><br><span class="line">			<span class="built_in">memset</span>(dp,<span class="number">0</span>,<span class="keyword">sizeof</span>(dp));</span><br><span class="line">			<span class="keyword">int</span> now=<span class="number">1</span>,last=<span class="number">0</span>;</span><br><span class="line">			dp[now][<span class="number">0</span>][<span class="number">0</span>]=<span class="number">1</span>;</span><br><span class="line">			sum_len=<span class="number">0</span>;</span><br><span class="line">			<span class="keyword">for</span> (<span class="keyword">int</span> i=<span class="number">1</span>;i&lt;=n;i++)</span><br><span class="line">			&#123;</span><br><span class="line">				last=now,now^=<span class="number">1</span>;</span><br><span class="line">				<span class="built_in">memset</span>(dp[now],<span class="number">0</span>,<span class="keyword">sizeof</span>(dp[now]));</span><br><span class="line">				<span class="keyword">for</span> (<span class="keyword">int</span> j=<span class="number">0</span>;j&lt;(<span class="number">1</span>&lt;&lt;m);j++)</span><br><span class="line">					<span class="keyword">for</span> (<span class="keyword">int</span> k=<span class="number">0</span>;k&lt;=sum_len;k++)</span><br><span class="line">						<span class="keyword">if</span> (dp[last][j][k])</span><br><span class="line">						&#123;</span><br><span class="line">							<span class="keyword">int</span> nxt=(j&lt;&lt;<span class="number">1</span>)&amp;((<span class="number">1</span>&lt;&lt;m)<span class="number">-1</span>);</span><br><span class="line">							<span class="keyword">if</span> (ok[i]) add(dp[now][nxt|<span class="number">1</span>][k+number[nxt|<span class="number">1</span>]],(mod-dp[last][j][k])%mod);</span><br><span class="line">							add(dp[now][nxt][k+number[nxt]],dp[last][j][k]);</span><br><span class="line">						&#125;</span><br><span class="line">				sum_len+=len[i];</span><br><span class="line">			&#125;</span><br><span class="line">			<span class="keyword">for</span> (<span class="keyword">int</span> i=<span class="number">1</span>;i&lt;=sum_len;i++)</span><br><span class="line">			&#123;</span><br><span class="line">				<span class="keyword">int</span> sum=<span class="number">0</span>;</span><br><span class="line">				<span class="keyword">for</span> (<span class="keyword">int</span> j=<span class="number">0</span>;j&lt;(<span class="number">1</span>&lt;&lt;m);j++)</span><br><span class="line">					add(sum,dp[now][j][i]);</span><br><span class="line">				add(Ans,(ll)sum*((ll)F[i]*sum_len%mod)%mod);</span><br><span class="line">			&#125;</span><br><span class="line">			Ans=(mod-Ans)%mod;</span><br><span class="line">			<span class="built_in">cout</span>&lt;&lt;Ans&lt;&lt;<span class="string">"\n"</span>;</span><br><span class="line">		&#125;</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
@@ -599,11 +599,11 @@
   <!-- JS库 sweetalert 可修改路径 -->
   <script src="https://cdn.bootcss.com/jquery/2.0.0/jquery.min.js"></script>
   <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
-  <p><span>本文标题:</span><a href="/2018/01/26/Uoj214/">Uoj214</a></p>
+  <p><span>本文标题:</span><a href="/2018/01/26/Uoj214/">Uoj#214.【UNR</a></p>
   <p><span>文章作者:</span><a href="/" title="访问 wzf2000 的个人博客">wzf2000</a></p>
   <p><span>发布时间:</span>2018年01月26日 - 16:01</p>
-  <p><span>最后更新:</span>2018年01月26日 - 16:01</p>
-  <p><span>原始链接:</span><a href="/2018/01/26/Uoj214/" title="Uoj214">https://wzf2000.github.io/2018/01/26/Uoj214/</a>
+  <p><span>最后更新:</span>2018年03月14日 - 15:03</p>
+  <p><span>原始链接:</span><a href="/2018/01/26/Uoj214/" title="Uoj#214.【UNR">https://wzf2000.github.io/2018/01/26/Uoj214/</a>
     <span class="copy-path"  title="点击复制文章链接"><i class="fa fa-clipboard" data-clipboard-text="https://wzf2000.github.io/2018/01/26/Uoj214/"  aria-label="复制成功！"></i></span>
   </p>
   <p><span>许可协议:</span><i class="fa fa-creative-commons"></i> <a rel="license" href="https://creativecommons.org/licenses/by-nc-nd/4.0/" target="_blank" title="Attribution-NonCommercial-NoDerivatives 4.0 International (CC BY-NC-ND 4.0)">署名-非商业性使用-禁止演绎 4.0 国际</a> 转载请保留原文链接及作者。</p>  
@@ -660,8 +660,8 @@
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/2018/01/26/Uoj270/" rel="prev" title="Uoj270">
-                Uoj270 <i class="fa fa-chevron-right"></i>
+              <a href="/2018/01/26/Uoj270/" rel="prev" title="Uoj#270.【清华集训2016】工厂">
+                Uoj#270.【清华集训2016】工厂 <i class="fa fa-chevron-right"></i>
               </a>
             
           </div>
@@ -753,7 +753,7 @@
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">38</span>
+                  <span class="site-state-item-count">49</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
@@ -764,7 +764,7 @@
               
               <div class="site-state-item site-state-categories">
                 <a href="/categories/index.html">
-                  <span class="site-state-item-count">32</span>
+                  <span class="site-state-item-count">42</span>
                   <span class="site-state-item-name">分类</span>
                 </a>
               </div>
@@ -775,7 +775,7 @@
               
               <div class="site-state-item site-state-tags">
                 <a href="/tags/index.html">
-                  <span class="site-state-item-count">31</span>
+                  <span class="site-state-item-count">42</span>
                   <span class="site-state-item-name">标签</span>
                 </a>
               </div>
@@ -875,7 +875,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#Uoj214题解"><span class="nav-number">1.</span> <span class="nav-text">Uoj214题解</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#题意："><span class="nav-number">1.0.1.</span> <span class="nav-text">题意：</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#题解："><span class="nav-number">1.0.2.</span> <span class="nav-text">题解：</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#代码："><span class="nav-number">1.0.3.</span> <span class="nav-text">代码：</span></a></li></ol></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#Uoj-214-【UNR-1】合唱队形-题解"><span class="nav-number">1.</span> <span class="nav-text">Uoj#214.【UNR #1】合唱队形 题解</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#题意："><span class="nav-number">1.0.1.</span> <span class="nav-text">题意：</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#题解："><span class="nav-number">1.0.2.</span> <span class="nav-text">题解：</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#代码："><span class="nav-number">1.0.3.</span> <span class="nav-text">代码：</span></a></li></ol></li></ol></li></ol></div>
             
 
           </div>
@@ -910,7 +910,7 @@
     
       <span class="post-meta-item-text">Site words total count&#58;</span>
     
-    <span title="Site words total count">32.6k</span>
+    <span title="Site words total count">47.3k</span>
   
 </div>
 
@@ -938,7 +938,7 @@
 
 <div class="theme-info">
   <div class="powered-by"></div>
-  <span class="post-count">博客全站共32.6k字</span>
+  <span class="post-count">博客全站共47.3k字</span>
 </div>
         
 
@@ -1076,7 +1076,7 @@
         var disqus_config = function () {
           this.page.url = 'https://wzf2000.github.io/2018/01/26/Uoj214/';
           this.page.identifier = '2018/01/26/Uoj214/';
-          this.page.title = 'Uoj214';
+          this.page.title = 'Uoj#214.【UNR';
         };
         var d = document, s = d.createElement('script');
         s.src = 'https://https-wzf2000-github-io.disqus.com/embed.js';
@@ -1457,26 +1457,6 @@
   
 
   
-  
-    <script type="text/x-mathjax-config">
-      MathJax.Hub.Config({
-        tex2jax: {
-          inlineMath: [ ['$','$'], ["\\(","\\)"]  ],
-          processEscapes: true,
-          skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
-        }
-      });
-    </script>
-
-    <script type="text/x-mathjax-config">
-      MathJax.Hub.Queue(function() {
-        var all = MathJax.Hub.getAllJax(), i;
-        for (i=0; i < all.length; i += 1) {
-          all[i].SourceElement().parentNode.className += ' has-jax';
-        }
-      });
-    </script>
-    <script type="text/javascript" src="//cdn.bootcss.com/mathjax/2.7.1/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
   
 
 
