@@ -149,7 +149,7 @@
 <meta property="og:site_name" content="wzf2000&#39;s blog">
 <meta property="og:description" content="Mix the Colors代码：12345678910111213141516171819202122#include &amp;lt;bits/stdc++.h&amp;gt;#define N 100009using namespace std;int n,a[N];int main()&amp;#123;	ios::sync_with_stdio(false);	cin.tie(0),cout.tie(0);">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-03-14T01:23:25.668Z">
+<meta property="og:updated_time" content="2018-03-14T10:13:16.516Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="codechef MARCH18">
 <meta name="twitter:description" content="Mix the Colors代码：12345678910111213141516171819202122#include &amp;lt;bits/stdc++.h&amp;gt;#define N 100009using namespace std;int n,a[N];int main()&amp;#123;	ios::sync_with_stdio(false);	cin.tie(0),cout.tie(0);">
@@ -486,7 +486,7 @@
                   <span class="post-meta-item-text">字数统计&#58;</span>
                 
                 <span title="字数统计">
-                  4,979
+                  4,916
                 </span>
               
 
@@ -582,17 +582,13 @@
 </li>
 <li><p>考虑计算距离为$d$的点对数$a_d$对于$Ans_i$的贡献。</p>
 </li>
-<li><p>显然就是</p>
+<li><p>显然就是<script type="math/tex">Ans_i=\sum \limits_{d=0}^{n-1-i}a_d\frac{C_{n-1-d}^{i}}{C_{n-1}^{i}} \\=\sum \limits_{d=0}^{n-1-i}a_d\frac{(n-1-d)!i!(n-1-i)!}{i!(n-1-d-i)!(n-1)!}\\=\sum \limits_{d=0}^{n-1-i}a_d\frac{(n-1-d)!(n-1-i)!}{(n-1-d-i)!(n-1)!}</script></p>
 </li>
-<li><h1 id="Ans-i-sum-limits-d-0-n-1-i-a-d-frac-C-n-1-d-i-C-n-1-i-sum-limits-d-0-n-1-i-a-d-frac-n-1-d-i-n-1-i-i-n-1-d-i-n-1-sum-limits-d-0-n-1-i-a-d-frac-n-1-d-n-1-i-n-1-d-i-n-1"><a href="#Ans-i-sum-limits-d-0-n-1-i-a-d-frac-C-n-1-d-i-C-n-1-i-sum-limits-d-0-n-1-i-a-d-frac-n-1-d-i-n-1-i-i-n-1-d-i-n-1-sum-limits-d-0-n-1-i-a-d-frac-n-1-d-n-1-i-n-1-d-i-n-1" class="headerlink" title="$ Ans_i=\sum \limits_{d=0}^{n-1-i}a_d\frac{C_{n-1-d}^{i}}{C_{n-1}^{i}} \\=\sum \limits_{d=0}^{n-1-i}a_d\frac{(n-1-d)!i!(n-1-i)!}{i!(n-1-d-i)!(n-1)!}\\=\sum \limits_{d=0}^{n-1-i}a_d\frac{(n-1-d)!(n-1-i)!}{(n-1-d-i)!(n-1)!}$"></a>$ Ans_i=\sum \limits_{d=0}^{n-1-i}a_d\frac{C_{n-1-d}^{i}}{C_{n-1}^{i}} \\=\sum \limits_{d=0}^{n-1-i}a_d\frac{(n-1-d)!i!(n-1-i)!}{i!(n-1-d-i)!(n-1)!}\\=\sum \limits_{d=0}^{n-1-i}a_d\frac{(n-1-d)!(n-1-i)!}{(n-1-d-i)!(n-1)!}$</h1></li>
-<li><p>所以</p>
+<li><p>所以<script type="math/tex">\frac{Ans_i}{(n-1-i)!}=\sum\limits_{d=0}^{n-1-i}\frac{a_d(n-1-d)!}{(n-1)!}\times \frac{1}{(n-1-d-i)!}</script></p>
 </li>
-<li><script type="math/tex; mode=display">\frac{Ans_i}{(n-1-i)!}=\sum\limits_{d=0}^{n-1-i}\frac{a_d(n-1-d)!}{(n-1)!}\times \frac{1}{(n-1-d-i)!}</script></li>
 <li><p>设$f_i=\frac{Ans_{n-1-i}}{i!}$，$g_i=\frac{a_i(n-1-i)!}{(n-1)!}$，$h_i=\frac{1}{i!}$。</p>
 </li>
-<li><p>那么</p>
-</li>
-<li><p><script type="math/tex">f_{n-1-i}=\sum \limits_{d=0}^{n-1-i}g_d\times h_{n-1-d-i}</script>。</p>
+<li><p>那么<script type="math/tex">f_{n-1-i}=\sum \limits_{d=0}^{n-1-i}g_d\times h_{n-1-d-i}</script>。</p>
 </li>
 <li><p>所以$f=g\times h$。</p>
 </li>
@@ -636,7 +632,7 @@
   <p><span>本文标题:</span><a href="/2018/03/14/codechef-MARCH18/">codechef MARCH18</a></p>
   <p><span>文章作者:</span><a href="/" title="访问 wzf2000 的个人博客">wzf2000</a></p>
   <p><span>发布时间:</span>2018年03月14日 - 07:03</p>
-  <p><span>最后更新:</span>2018年03月14日 - 09:03</p>
+  <p><span>最后更新:</span>2018年03月14日 - 18:03</p>
   <p><span>原始链接:</span><a href="/2018/03/14/codechef-MARCH18/" title="codechef MARCH18">https://wzf2000.github.io/2018/03/14/codechef-MARCH18/</a>
     <span class="copy-path"  title="点击复制文章链接"><i class="fa fa-clipboard" data-clipboard-text="https://wzf2000.github.io/2018/03/14/codechef-MARCH18/"  aria-label="复制成功！"></i></span>
   </p>
@@ -907,7 +903,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#Mix-the-Colors"><span class="nav-number">1.</span> <span class="nav-text">Mix the Colors</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#代码："><span class="nav-number">1.1.</span> <span class="nav-text">代码：</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Chef-and-Easy-Problem"><span class="nav-number">2.</span> <span class="nav-text">Chef and Easy Problem</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#代码：-1"><span class="nav-number">2.1.</span> <span class="nav-text">代码：</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Minions-and-Voting"><span class="nav-number">3.</span> <span class="nav-text">Minions and Voting</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#代码：-2"><span class="nav-number">3.1.</span> <span class="nav-text">代码：</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Chef-and-Gcd-Queries"><span class="nav-number">4.</span> <span class="nav-text">Chef and Gcd Queries</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#题意："><span class="nav-number">4.1.</span> <span class="nav-text">题意：</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#题解："><span class="nav-number">4.2.</span> <span class="nav-text">题解：</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#方法一："><span class="nav-number">4.2.1.</span> <span class="nav-text">方法一：</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#方法二："><span class="nav-number">4.2.2.</span> <span class="nav-text">方法二：</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#代码：-3"><span class="nav-number">4.3.</span> <span class="nav-text">代码：</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Pishty-and-Triangles"><span class="nav-number">5.</span> <span class="nav-text">Pishty and Triangles</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#题意：-1"><span class="nav-number">5.1.</span> <span class="nav-text">题意：</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#题解：-1"><span class="nav-number">5.2.</span> <span class="nav-text">题解：</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#代码：-4"><span class="nav-number">5.3.</span> <span class="nav-text">代码：</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Chef-and-Interval-Painting"><span class="nav-number">6.</span> <span class="nav-text">Chef and Interval Painting</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#题意：-2"><span class="nav-number">6.1.</span> <span class="nav-text">题意：</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#题解：-2"><span class="nav-number">6.2.</span> <span class="nav-text">题解：</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#代码：-5"><span class="nav-number">6.3.</span> <span class="nav-text">代码：</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Chef-Cuts-Tree"><span class="nav-number">7.</span> <span class="nav-text">Chef Cuts Tree</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#题意：-3"><span class="nav-number">7.1.</span> <span class="nav-text">题意：</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#题解：-3"><span class="nav-number">7.2.</span> <span class="nav-text">题解：</span></a></li></ol></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Ans-i-sum-limits-d-0-n-1-i-a-d-frac-C-n-1-d-i-C-n-1-i-sum-limits-d-0-n-1-i-a-d-frac-n-1-d-i-n-1-i-i-n-1-d-i-n-1-sum-limits-d-0-n-1-i-a-d-frac-n-1-d-n-1-i-n-1-d-i-n-1"><span class="nav-number"></span> <span class="nav-text">$ Ans_i=\sum \limits_{d=0}^{n-1-i}a_d\frac{C_{n-1-d}^{i}}{C_{n-1}^{i}} \\=\sum \limits_{d=0}^{n-1-i}a_d\frac{(n-1-d)!i!(n-1-i)!}{i!(n-1-d-i)!(n-1)!}\\=\sum \limits_{d=0}^{n-1-i}a_d\frac{(n-1-d)!(n-1-i)!}{(n-1-d-i)!(n-1)!}$</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#代码：-6"><span class="nav-number">0.1.</span> <span class="nav-text">代码：</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Embedding-a-Tree-Challenge"><span class="nav-number">1.</span> <span class="nav-text">Embedding a Tree (Challenge)</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#Mix-the-Colors"><span class="nav-number">1.</span> <span class="nav-text">Mix the Colors</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#代码："><span class="nav-number">1.1.</span> <span class="nav-text">代码：</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Chef-and-Easy-Problem"><span class="nav-number">2.</span> <span class="nav-text">Chef and Easy Problem</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#代码：-1"><span class="nav-number">2.1.</span> <span class="nav-text">代码：</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Minions-and-Voting"><span class="nav-number">3.</span> <span class="nav-text">Minions and Voting</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#代码：-2"><span class="nav-number">3.1.</span> <span class="nav-text">代码：</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Chef-and-Gcd-Queries"><span class="nav-number">4.</span> <span class="nav-text">Chef and Gcd Queries</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#题意："><span class="nav-number">4.1.</span> <span class="nav-text">题意：</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#题解："><span class="nav-number">4.2.</span> <span class="nav-text">题解：</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#方法一："><span class="nav-number">4.2.1.</span> <span class="nav-text">方法一：</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#方法二："><span class="nav-number">4.2.2.</span> <span class="nav-text">方法二：</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#代码：-3"><span class="nav-number">4.3.</span> <span class="nav-text">代码：</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Pishty-and-Triangles"><span class="nav-number">5.</span> <span class="nav-text">Pishty and Triangles</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#题意：-1"><span class="nav-number">5.1.</span> <span class="nav-text">题意：</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#题解：-1"><span class="nav-number">5.2.</span> <span class="nav-text">题解：</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#代码：-4"><span class="nav-number">5.3.</span> <span class="nav-text">代码：</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Chef-and-Interval-Painting"><span class="nav-number">6.</span> <span class="nav-text">Chef and Interval Painting</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#题意：-2"><span class="nav-number">6.1.</span> <span class="nav-text">题意：</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#题解：-2"><span class="nav-number">6.2.</span> <span class="nav-text">题解：</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#代码：-5"><span class="nav-number">6.3.</span> <span class="nav-text">代码：</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Chef-Cuts-Tree"><span class="nav-number">7.</span> <span class="nav-text">Chef Cuts Tree</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#题意：-3"><span class="nav-number">7.1.</span> <span class="nav-text">题意：</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#题解：-3"><span class="nav-number">7.2.</span> <span class="nav-text">题解：</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#代码：-6"><span class="nav-number">7.3.</span> <span class="nav-text">代码：</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Embedding-a-Tree-Challenge"><span class="nav-number">8.</span> <span class="nav-text">Embedding a Tree (Challenge)</span></a></li></ol></div>
             
 
           </div>
@@ -942,7 +938,7 @@
     
       <span class="post-meta-item-text">Site words total count&#58;</span>
     
-    <span title="Site words total count">47.3k</span>
+    <span title="Site words total count">47.2k</span>
   
 </div>
 
@@ -970,7 +966,7 @@
 
 <div class="theme-info">
   <div class="powered-by"></div>
-  <span class="post-count">博客全站共47.3k字</span>
+  <span class="post-count">博客全站共47.2k字</span>
 </div>
         
 
