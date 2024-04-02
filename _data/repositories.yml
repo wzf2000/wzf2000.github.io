@@ -1,12 +1,9 @@
 github_users:
-  - torvalds
-  - alshedivat
+  - wzf2000
 
 github_repos:
-  - alshedivat/al-folio
-  - twbs/bootstrap
-  - jekyll/jekyll
-  - jquery/jquery
-  - FortAwesome/Font-Awesome
-  - jpswalsh/academicons
-  - mathjax/MathJax
+  - wzf2000/MACRec
+  - wzf2000/Recommendability_DASFAA2024
+  - wzf2000/RecLLMSim
+  - wzf2000/THULearning
+  - wzf2000/THUCS
