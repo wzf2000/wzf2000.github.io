@@ -1,6 +1,8 @@
 github_users:
   - wzf2000
 
+repo_description_lines_max: 2
+
 github_repos:
   - wzf2000/MACRec
   - wzf2000/Recommendability_DASFAA2024
