@@ -7,3 +7,15 @@
 
 "Vision":
   color: "#009f36"
+
+"SIGIR":
+  url: https://sigir.org/
+  color: "#926e42"
+
+"CIKM":
+  url: https://dl.acm.org/conference/cikm
+  color: "#00509e"
+
+"DASFAA":
+  url: https://www.dasfaa.net/
+  color: "#467fbf"
