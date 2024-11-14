@@ -16,5 +16,5 @@ LLM-based agents have gained considerable attention for their decision-making sk
     </div>
 </div>
 <div class="caption">
-    The overall architecture of MACRec.
+    The overall architecture of MACRec {% cite wang2024macrec %}.
 </div>
